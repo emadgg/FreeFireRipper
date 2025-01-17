@@ -1,6 +1,6 @@
 # WRITTEN AND MANAGED BY GW KANG
 
-name: FreeFireRipper Standard
+name: FreeFireRipper
 on:
   workflow_dispatch:
     inputs:
