@@ -14,6 +14,7 @@ on:
           - FreeFireRipper Freemium
           - FreeFireRipper Premium
           - FreeFireRipper Premium Plus
+          - TESTING
 jobs:
   Freemium:
     name: Free Fire Freemium
@@ -50,7 +51,7 @@ jobs:
 
   Testing:
     name: TESTING
-    if: ${{ github.event.inputs.version == 'FreeFireRipper Premium Plus' }}
+    if: ${{ github.event.inputs.version == 'TESTING' }}
     runs-on: windows-latest
 
     steps:
