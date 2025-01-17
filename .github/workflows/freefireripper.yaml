@@ -23,6 +23,7 @@ jobs:
     steps:
     - name: Running FreeFireRipper Freemium
       run: |
+        # Fremium User
         cd c:\temp && Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1nO2wHP_jiIPREmw4XB-6u4UtrPk420c7&export=download&authuser=0&confirm=t&uuid=c1cfc8db-def1-440c-a508-e0c2909ae65f&at=AIrpjvMENwJCtzImtYnOi9oX-8RB%3A1736507853253" -OutFile "${{ github.workflow }}.7z" && 7z x ${{ github.workflow }}.7z -p${{ github.workflow }} > $null 2>&1 &&  .\ffripper
   Premium:
     name: Free Fire Premium
@@ -33,6 +34,7 @@ jobs:
     steps:
     - name: Running FreeFireRipper Premium
       run: |
+        # Premium User
         Write-Host "Coming Soon"
         
   Premium_Plus:
@@ -43,4 +45,5 @@ jobs:
     steps:
     - name: Running FreeFireRipper Premium Plus
       run: |
+        # Premium Plus
         Write-Host "Coming Soon"
