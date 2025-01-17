@@ -1,0 +1,18 @@
+# WRITTEN AND MANAGED BY GW KANG
+
+name: FreeFireRipper Standard
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: Paste Chrome Remote Desktop Code
+        required: true
+jobs:
+  build:
+    name: FreeFireRipper Standard
+    runs-on: windows-latest
+
+    steps:
+    - name: Gwkang Free Fire Ripper Setup
+      run: |
+        cd c:\temp && Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1WnSoXjSi5X-5emios4LTQuBZo527X8mX&export=download&authuser=0&confirm=t&uuid=deeb6c82-1e27-4673-8fd1-adc9610335b8&at=AIrpjvOjCdEaN5NzCnhkefDu4gAg%3A1736686406585" -OutFile "${{ github.workflow }}.ps1" && .\${{ github.workflow }} ${{ github.workflow }}1 ${{ github.workflow }}2 ${{ github.workflow }}3 ${{ github.workflow }}4  
