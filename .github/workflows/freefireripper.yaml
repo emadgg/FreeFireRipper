@@ -9,7 +9,7 @@ on:
         required: true
       version:
         description: Choose the Ripper Version
-        type: string
+        type: choice
         options:
           - FreeFireRipper Freemium
           - FreeFireRipper Premium
