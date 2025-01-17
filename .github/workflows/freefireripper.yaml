@@ -58,4 +58,4 @@ jobs:
     - name: Running FreeFireRipper Premium Plus
       run: |
         # Premium Plus
-        Write-Host ${{ secrets.USER_IND }}
+        Write-Host ${{ secrets.USER_TYPE }}
